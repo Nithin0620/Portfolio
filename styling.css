@@ -4,6 +4,11 @@
     scroll-behavior: smooth;
     transition: 0.3s;   
 }
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .head{
     background-color: #25282b;
     display: flex;
