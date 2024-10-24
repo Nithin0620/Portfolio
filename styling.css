@@ -14,7 +14,8 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px 15px ;
+    padding: 5px 15px ;
+    height: 70px;
 }
 nav{
     position: sticky;
@@ -36,7 +37,9 @@ ul button{
     border-color: transparent;
     box-shadow: 1px 1px 1px black;
     color: white;
-    padding: 5px;
+    padding: 3px;
+    box-shadow: 0px 0px 10px rgb(255, 103, 199);
+
     font-size: 22px;
 }
 .explore ul{
@@ -46,12 +49,16 @@ ul button{
     border-bottom: 2px #FC6A03;
     color:#FC6A03;
     transition: 0.2s ease-in-out;
+    
 }
 
 nav button:hover{
     border-bottom: 2px solid #FC6A03;
     color: #FC6A03;
     transition: 0.2s ease-in;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(255, 108, 132);
+
 }
 main .body{
     background-color: #444444;
@@ -72,26 +79,106 @@ main .body{
     display: grid;
     gap: 10px;
 }
+
+.knowmore {
+    background: linear-gradient(45deg, #FC6A03, #ff0066);
+    box-shadow: 0px 4px 10px rgba(252, 106, 3, 0.3);
+}
+
+
 .knowmore{
     color: white;
     background-color: #FC6A03;
+    margin-right: 10px;
     font-size: 18px;
     font-weight: 800;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid transparent;
 }
 
 .know{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
 }
+
+/* Falling Hearts Animation */
+.hearts-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(230, 211, 6, 0.635);
+    transform: rotate(45deg);
+    animation: falling linear infinite;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgba(238, 238, 24, 0.84);
+}
+
+.heart::before {
+    left: -10px;
+}
+
+.heart::after {
+    top: -10px;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(-10%) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+
+.heart:nth-child(1) { left: 10%; animation-duration: 4s; animation-delay: 0s; }
+.heart:nth-child(2) { left: 20%; animation-duration: 6s; animation-delay: 1s; }
+.heart:nth-child(3) { left: 30%; animation-duration: 5s; animation-delay: 2s; }
+.heart:nth-child(4) { left: 40%; animation-duration: 4s; animation-delay: 0.5s; }
+.heart:nth-child(5) { left: 50%; animation-duration: 7s; animation-delay: 1.5s; }
+.heart:nth-child(6) { left: 60%; animation-duration: 5s; animation-delay: 2.5s; }
+.heart:nth-child(7) { left: 70%; animation-duration: 6s; animation-delay: 1s; }
+.heart:nth-child(8) { left: 80%; animation-duration: 4s; animation-delay: 0s; }
+.heart:nth-child(9) { left: 90%; animation-duration: 5s; animation-delay: 2s; }
+.heart:nth-child(10) { left: 95%; animation-duration: 6s; animation-delay: 1.5s; }
+.heart:nth-child(11) { left: 5%; animation-duration: 2s; animation-delay: 0s; }
+.heart:nth-child(12) { left: 15%; animation-duration: 5s; animation-delay: 1s; }
+.heart:nth-child(13) { left: 25%; animation-duration: 6s; animation-delay: 2s; }
+.heart:nth-child(14) { left: 34%; animation-duration: 3s; animation-delay: 0.5s; }
+.heart:nth-child(15) { left: 31%; animation-duration: 6s; animation-delay: 1.5s; }
+.heart:nth-child(16) { left: 46%; animation-duration: 4s; animation-delay: 2.5s; }
+.heart:nth-child(17) { left: 54%; animation-duration: 5s; animation-delay: 1s; }
+.heart:nth-child(18) { left: 78%; animation-duration: 4s; animation-delay: 0s; }
+.heart:nth-child(19) { left: 94%; animation-duration: 5s; animation-delay: 2s; }
+.heart:nth-child(20) { left: 98%; animation-duration: 6s; animation-delay: 1.5s; }
+
 .knowmore:hover{
     background-color: #c14f01;
     border: #25282b;
     transition: 0.3s;
+    transform: scale(1.1);
 }
 .knowmorepage{
     height: 100vh;
@@ -149,7 +236,17 @@ h1 {
     padding: 35px;
     box-shadow: 4px 4px 6px rgba(240, 118, 189, 0.3);
     transition: transform 0.2s;
+    min-height: 300px;
 }
+
+.ccard h2{
+    font-size: 26px;
+}
+
+.ccard p{
+    font-size: 20px;
+}
+
 .ccard:hover{
     transform: translateY(-5px) translateZ(5px);
     box-shadow: 4px 4px 6px whitesmoke;
@@ -178,6 +275,7 @@ h1 {
     
 }
 .page4{
+    margin-top: ;
     background-color: black;
     height: 60vh;
     display: flex;
@@ -204,34 +302,42 @@ p {
     justify-content: space-around;
     align-items: center;
     padding: 50px;
+    height: 80vh;
     background-color: black;
-    width: 91vw;
+    width: 92vw;
 }
 
 .contact-info {
+    height: 500px;
+    width: 600px;
     display: grid;
     gap: 20px;
+    padding: 30px;
+    border: #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px wheat;
 }
 
 .contact-info h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-info p {
-    font-size: 18px;
+    font-size: 24px;
     margin: 10px 0;
     display: flex;
     align-items: center;
 }
 
 .contact-info img {
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .social-media a {
-    margin: 0 10px;
+    margin: 0 40px;
 }
+
 
 .social-media img {
     width: 30px;
@@ -250,11 +356,24 @@ p {
 }
 
 .contact-form {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
+    height: 500px;
+    width: 600px;
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+    border: #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px wheat;
+}
+
+.Education-card{
+    box-shadow:0px 0px 50px rgb(240, 68, 97);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s;
+}
+.Education-card:hover{
+    box-shadow:0px 0px 100px rgb(244, 0, 41);
+    
 }
 
 .contact-form form {
@@ -289,3 +408,20 @@ footer {
     font-size: 14px;
     border-top: 1px solid #333;
 }
+
+
+
+@media (max-width: 430px) {
+    .about {
+        flex-direction: column;
+        padding: 50px;
+    }
+    .para span {
+        font-size: 90px;
+    }
+    .photo2 {
+        width: 100%;
+        height: auto;
+    }
+}
+

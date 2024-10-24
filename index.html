@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nithinnovate</title>
     <link rel="stylesheet" href="styling.css">
+    
+    <style>
+        .page2 {
+            position: relative;  /* This is important for positioning the hearts */
+            overflow: hidden;    /* Keeps hearts within the section */
+        }
+    </style>
 </head>
 
 <body>
@@ -24,8 +31,9 @@
             </div>
             <div class="hovering" style="padding-top: 15px;">
                 <button
-                    style="background-color: #ca1010; margin-right: 40px; font-size: 24px; padding: 5px; border: 1px solid black ; border-radius: 5px;"><a href="#contact1">Contact
-                    Me</a></button>
+                    style="background-color: #ca1010; margin-right: 40px; font-size: 24px; padding: 5px; border: 1px solid black ; border-radius: 5px;"><a
+                        href="#contact1">Contact
+                        Me</a></button>
             </div>
         </nav>
     </header>
@@ -34,8 +42,8 @@
             <div class="about">
                 <div class="para"><span style="font-size: 125px; font-weight: bolder; color: white;">Hi</span><span
                         style="font-size: 125px; font-weight: bolder; color: white;">I'm Nithin</span><span
-                        style="font-size: 30px; font-weight: bolder; color: white;">An aspiring
-                        Web Developer</span><span style="color: white; font-size: 17px; ">A B-Tech student at MSIT,
+                        style="font-size: 30px; font-weight: bolder; color: white;"><span class="role"></span>
+                    </span><span style="color: white; font-size: 17px; ">A B-Tech student at MSIT,
                         graduating in 2028, with a strong foundation in C++ and a passion for web development, Data
                         Structures, and Algorithms (DSA), eager to build innovative tech solutions.</span>
                     <div class="know"><button class="knowmore"><a href="#Knowmore">Know More</a> </button><button
@@ -48,35 +56,67 @@
             </div>
         </div>
     </main>
-    <div style="height: 5px; background-color:rgb(219, 240, 240);">
+    <div style="height: 2px; background-color:rgb(219, 240, 240);">
 
     </div>
-    <div class="page2">
-        <div class="knowmorepage">
-            <div><img style="height: 600px; width: 470px;" src="1.png" alt=""></div>
-            <div class="moreabout" id="Knowmore" style="display: grid; gap: 30px;">
-                <div style="font-size: 75px; font-weight: 900; color: burlywood; margin-bottom: 15px; "><b> More About
-                        Me</b></div>
-                <div>I am a B.Tech student specializing in Information Technology at Maharaja Surajmal
-                    Institute of Technology, GGSIPU, New Delhi, set to graduate in 2028. With a strong foundation in C++
-                    and
-                    a deep understanding of Data Structures and Algorithms (DSA), I am passionate about creating
-                    efficient
-                    and optimized solutions for complex problems. My technical journey has led me to explore both
-                    frontend
-                    and backend aspects of web development, aiming to build user-friendly and robust applications. I am
-                    also
-                    delving into the world of IoT, aspiring to connect devices and data for smarter, real-world
-                    applications.</div>
-                <div>I enjoy taking on new challenges that push my skills and knowledge, and I am committed to
-                    continuous learning and growth. I am eager to collaborate with like-minded individuals who share a
-                    passion for technology and innovation. If you’re looking for someone dedicated to making a
-                    difference
-                    through tech, let’s connect and build something impactful together!</div>
+    <!-- Original divider -->
+<div style="height: 2px; background-color:rgb(219, 240, 240);"></div>
+
+<!-- Updated page2 section -->
+<div class="page2">
+    <!-- Added hearts container -->
+    <div class="hearts-container">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+    
+    <!-- Original content -->
+    <div class="knowmorepage">
+        <div><img style="height: 600px; width: 470px;" src="1.png" alt=""></div>
+        <div class="moreabout" id="Knowmore" style="display: grid; gap: 30px;">
+            <div style="font-size: 75px; font-weight: 900; color: burlywood; margin-bottom: 15px; ">
+                <b>More About Me</b>
+            </div>
+            <div>
+                I am a B.Tech student specializing in Information Technology at Maharaja Surajmal
+                Institute of Technology, GGSIPU, New Delhi, set to graduate in 2028. With a strong foundation in C++
+                and a deep understanding of Data Structures and Algorithms (DSA), I am passionate about creating
+                efficient and optimized solutions for complex problems. My technical journey has led me to explore both
+                frontend and backend aspects of web development, aiming to build user-friendly and robust applications. I am
+                also delving into the world of IoT, aspiring to connect devices and data for smarter, real-world
+                applications.
+            </div>
+            <div>
+                I enjoy taking on new challenges that push my skills and knowledge, and I am committed to
+                continuous learning and growth. I am eager to collaborate with like-minded individuals who share a
+                passion for technology and innovation. If you're looking for someone dedicated to making a
+                difference through tech, let's connect and build something impactful together!
             </div>
         </div>
     </div>
-    <div style="height: 5px; background-color:rgb(219, 240, 240);"></div>
+</div>
+
+<!-- Original divider -->
+<div style="height: 2px; background-color:rgb(219, 240, 240);"></div>
+    <div style="height: 2px; background-color:rgb(219, 240, 240);"></div>
     <div class="page3" id="page33">
         <div class="container">
             <h1>Skills</h1>
@@ -115,7 +155,7 @@
             </div>
         </div>
     </div>
-    <div style="height: 5px; background-color:rgb(219, 240, 240);">
+    <div style="height: 2px; background-color:rgb(219, 240, 240);">
 
     </div>
     <div class="page3" id="projects">
@@ -123,47 +163,58 @@
             <h1 class="projects" style="color: wheat; font-weight: 900;">My Projects</h1>
             <div class="grid">
 
-                <div class="ccard">
-                    <div>
-                        <h2>Tune Your Music</h2>
-                        <div style=" width: 125px; height: 80px;"><img
-                                style=" padding-left: 30px; width: 125px; height: 80px;" src="music.png"></div>
-                        <p style="padding-top: 35px; font-size: medium;"> A simple music tuning website front page using
-                            HTML and CSS with
-                            user-friendly design.</p>
+                <a href="https://github.com/Nithin0620/TuneYourMusic">
+                    <div class="ccard">
+                        <div>
+                            <h2>Tune Your Music</h2>
+                            <div style=" width: 125px; height: 80px;"><img
+                                    style=" padding-left: 30px; width: 125px; height: 80px;" src="music.png"></div>
+                            <p style="padding-top: 35px; font-size: 20px;"> A simple music tuning website front page
+                                using
+                                HTML and CSS with
+                                user-friendly design.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
 
-                <div class="ccard">
-                    <div>
-                        <h2>Parallax Website</h2>
-                        <div style=" width: 125px; height: 80px;"><img
-                                style=" padding-left: 30px; width: 125px; height: 80px;" src="parallax.png"></div>
-                        <p style="padding-top: 35px; font-size: medium;"> A simple Webpage showcasing my skills made
-                            using HTML and CSS.</p>
+                <a href="https://github.com/Nithin0620/Parallax-Website">
+                    <div class="ccard">
+                        <div>
+                            <h2>Parallax Website</h2>
+                            <div style=" width: 125px; height: 80px;"><img
+                                    style=" padding-left: 30px; width: 125px; height: 80px;" src="parallax.png"></div>
+                            <p style="padding-top: 35px; font-size: 20px;"> A simple Webpage showcasing my skills made
+                                using HTML and CSS.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="ccard">
-                    <div>
-                        <h2> Netflix Clone</h2>
-                        <div style=" width: 125px; height: 80px;"><img
-                                style=" padding-left: 30px; width: 125px; height: 80px;" src="netflix.png"></div>
-                        <p style="padding-top: 35px; font-size: medium;"> Netflix Clone Which looks similar to original
-                            netflix webpage</p>
+                </a>
+                <a href="">
+                    <div class="ccard">
+                        <div>
+                            <h2> Netflix Clone</h2>
+                            <div style=" width: 125px; height: 80px;"><img
+                                    style=" padding-left: 30px; width: 125px; height: 80px;" src="netflix.png"></div>
+                            <p style="padding-top: 35px; font-size: 20px;"> Netflix Clone Which looks similar to
+                                original
+                                netflix webpage</p>
 
+                        </div>
                     </div>
-                </div>
-                <div class="ccard">
-                    <div>
-                        <h2>Portfolio</h2>
-                        <div style=" align-items: center; width: 125px; height: 80px;"><img
-                                style=" padding-left: 30px; width: 125px; height: 80px;" src="portfoilio.png"></div>
-                        <p style="padding-top: 35px; font-size: medium;">My Portfolio website made using HTML and css.
-                        </p>
+                </a>
+                <a href="http://127.0.0.1:5500/index.html">
+                    <div class="ccard">
+                        <div>
+                            <h2>Portfolio</h2>
+                            <div style=" align-items: center; width: 125px; height: 80px;"><img
+                                    style=" padding-left: 30px; width: 125px; height: 80px;" src="portfoilio.png"></div>
+                            <p style="padding-top: 35px; font-size: 20px;">My Portfolio website made using HTML and
+                                css.
+                            </p>
 
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -172,12 +223,13 @@
 
     </div>
     <div class="page4" id="Education">
-        <div style="padding: 30px ; background-color: gray;opacity: 0.8;  border-radius: 20px;">
-            <h1 style="font-size: 50px;"> Education </h1>
+        <div class="Education-card" style="padding: 30px ; background-color: gray;opacity: 1;  border-radius: 20px; margin-top: 100px; margin-bottom: 100px;">
+            <h1 style="font-size: 50px; z-index: 100; color: rgb(66, 254, 254);"> Education </h1>
             <h1 style="font-size: 30px;color: white;">
                 <ul>
                     <li>Maharaja Surajmal Institte of Technology(2024-Present)<br>
-                        <h4 style="font-size:20px; color:#ccc;">Bachelor's of Technology (Information and Technology)</h4>
+                        <h4 style="font-size:20px; color:#ccc;">Bachelor's of Technology (Information and Technology)
+                        </h4>
                     </li>
                 </ul>
             </h1>
@@ -190,13 +242,18 @@
     </div>
     <div class="contact-container" id="contact1">
         <div class="contact-info">
-            <h1>Contact Me</h1>
-            <p><img style="height: 20px; width: 20px;" src="email-icon.png" alt="Email Icon"><a href="mailto:nithin30302@gmail.com">nithin30302@gmail.com</a> </p>
-            <p><img style="height: 20px; width: 20px;" src="call-icon.png" alt="Phone Icon"> <a href="callto:7428662179">7428662179</a></p>
+            <h1><u>Contact Me</u></h1>
+            <p><img style="height: 20px; width: 20px;" src="email-icon.png" alt="Email Icon"><a
+                    href="mailto:nithin30302@gmail.com">nithin30302@gmail.com</a> </p>
+            <p><img style="height: 20px; width: 20px;" src="call-icon.png" alt="Phone Icon"> <a
+                    href="callto:7428662179">7428662179</a></p>
             <div class="social-media">
-                <a href="https://www.instagram.com/_nithin_0620/"><img style="color: white;" src="instagram-icon.jpg" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/k-s-nithin/"><img style="color: white;" src="linkdin-icon.png" alt="LinkedIn"></a>
-                <a href="https://github.com/Nithin0620"><img style="color: white;" src="github-icon.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/_nithin_0620/"><img style="color: white;" src="instagram-icon.jpg"
+                        alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/k-s-nithin/"><img style="color: white;" src="linkdin-icon.png"
+                        alt="LinkedIn"></a>
+                <a href="https://github.com/Nithin0620"><img class="imagesss" style="color: white;" src="github-icon.png"
+                        alt="GitHub"></a>
             </div>
         </div>
         <div class="contact-form">
@@ -212,6 +269,25 @@
     <footer>
         <p>Copyright © Nithin. made with ❤️</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+        strings: [
+            "An Aspiring Web Developer and",
+            "A Coding Enthusiast",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+     });
+      </script>
 </body>
 
 </html>
+
+
+
