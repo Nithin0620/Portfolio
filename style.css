@@ -1,0 +1,204 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 0.3s;
+    box-sizing: border-box; /* Add box-sizing for more predictable element sizes */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Add a global font-family */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.head {
+    background-color: #25282b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Adjusted for better spacing */
+    padding: 10px 15px;
+    align-items: center; /* Ensure vertical alignment */
+}
+
+nav {
+    position: sticky;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Nav */
+.ullist {
+    list-style-type: none;
+    font-size: 24px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Added for wrapping on smaller screens */
+}
+
+ul button {
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.hovering:hover {
+    border-bottom: 2px solid #FC6A03;
+    color: #FC6A03;
+    transition: 0.2s ease-in-out;
+}
+
+/* Responsive body section */
+main .body {
+    background-color: #444444;
+    height: auto; /* Adjust height to auto for responsiveness */
+    padding: 20px;
+}
+
+/* About section */
+.about {
+    display: flex;
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center;
+    padding: 20px;
+    gap: 30px; /* Add gap between elements */
+}
+
+.para {
+    display: grid;
+    gap: 10px;
+    text-align: center; /* Center text on smaller screens */
+}
+
+.knowmore {
+    color: white;
+    background-color: #FC6A03;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.know {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Ensure the image adjusts on smaller screens */
+.photo2 {
+    max-width: 100%;
+    height: auto; /* Ensure image scales properly */
+}
+
+/* Page 2 section */
+.knowmorepage {
+    background-color: black;
+    color: #d3d3d3;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adjust the grid layout for responsiveness */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* Responsive Cards */
+.card, .ccard {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 4px 6px rgba(240, 118, 189, 0.3);
+    transition: transform 0.2s;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    width: 100%; /* Make it fully responsive */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
+
+/* Media queries for iPhone 14 Pro Max */
+@media only screen and (max-width: 430px) {
+    .ullist {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .head span {
+        font-size: 22px; /* Reduce size of the name */
+        margin-left: 10px;
+    }
+
+    .head {
+        padding: 5px;
+    }
+
+    .about {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .para span {
+        font-size: 80px; /* Reduce heading size */
+    }
+
+    .para {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .know {
+        flex-direction: column;
+    }
+
+    .ccard, .card {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info h1 {
+        font-size: 24px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 14px; /* Reduce font size */
+    }
+}
